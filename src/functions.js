@@ -31,3 +31,15 @@ let product3={productName:"Anannas",unitPrice:12,quantity:2}
 product2=product3
 product2.productName="KArpuz"
 console.log(product3.productName) //referans tip old. icin consola KArpuz yazar 
+
+
+function addToCart3(x) {
+    console.log(x)
+}
+
+let products=[
+    {productName:"Elma",unitPrice:12,quantity:2},
+    {productName:"Erik",unitPrice:12,quantity:2}
+]
+
+addToCart3(products)
