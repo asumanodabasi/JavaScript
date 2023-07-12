@@ -22,7 +22,7 @@ function findPrime(...numbers) {
 
 function listPrime() {
     
-    for(let i=0;i<100;i++){
+    for(let i=0;i<1000;i++){
         let isPrime=false    
         for(let a=2;a<i;a++)
         {
