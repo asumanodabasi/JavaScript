@@ -18,7 +18,7 @@ function findPrime(...numbers) {
    }
 }
 
-//findPrime(10,5,3,6,11,4,13)
+findPrime(10,5,3,6,11,4,13)
 
 function listPrime() {
     
