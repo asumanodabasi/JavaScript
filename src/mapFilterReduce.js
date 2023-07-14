@@ -1,4 +1,6 @@
-let cart = [
+//frontende referans tip onemlidir
+
+let cart = [  //referans tip 
     {id:1, productName:"Telefon", quantity:3, unitPrice:4000},
     {id:2, productName:"Bardak", quantity:2, unitPrice:30},
     {id:3, productName:"Kalem", quantity:1, unitPrice:20},
@@ -8,23 +10,25 @@ let cart = [
 ]
 
 console.log("<ul>")
+//iterasyon yapar yani sepeti tek tek dolasir
+//foreach gibi product olarak takma isim verdik
 cart.map(product=>{
     console.log("<li>"+product.productName + " : " 
     + product.unitPrice * product.quantity+"</li>")
 })
 console.log("</ul>")
-
+                       //once acc,takma isim                                                        //acc ilk degeri=0 dedmis olduk     
 let total = cart.reduce((acc,product)=>acc+ product.unitPrice * product.quantity,0)
 
 
 console.log(total)
 
 
-let quantityOver2 = cart.filter(product=>product.quantity>2)
+let quantityOver2 = cart.filter(product=>product.quantity>2) //filtreleme yapar linq gibi
 
 console.log(quantityOver2)
 
-function addToCart(sepet) {
+function addToCart(sepet) { //referans tip old icin Ruhsat cart a eklenir 
     sepet.push({id:7, productName:"Ruhsat", quantity:1, unitPrice:20})
 }
 
@@ -34,10 +38,10 @@ addToCart(cart)
 
 console.log(cart)
 
-let sayi = 10
+let sayi = 10  //deger tip old icin sonuc 10
 
 function sayiTopla(number) {
-    number += 1
+    number += 1  
 }
 sayiTopla(sayi)
 console.log(sayi)
