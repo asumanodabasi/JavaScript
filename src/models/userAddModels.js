@@ -1,4 +1,4 @@
-export default class User{
+export default class UserAddModel{
     constructor(id,firstName,lastName,city,age){ //ecma scriptte boyle prototyping yapılır
         this.id=id
         this.firstName=firstName

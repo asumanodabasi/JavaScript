@@ -10,14 +10,14 @@ let cart = [  //referans tip
 ]
 
 console.log("<ul>")
-//iterasyon yapar yani sepeti tek tek dolasir
+//map: iterasyon yapar yani sepeti tek tek dolasir
 //foreach gibi product olarak takma isim verdik
 cart.map(product=>{
     console.log("<li>"+product.productName + " : " 
     + product.unitPrice * product.quantity+"</li>")
 })
 console.log("</ul>")
-                       //once acc,takma isim                                                        //acc ilk degeri=0 dedmis olduk     
+                       //once acc,takma isim                                     //acc ilk degeri=0 demis olduk     
 let total = cart.reduce((acc,product)=>acc+ product.unitPrice * product.quantity,0)
 
 
